@@ -1,0 +1,200 @@
+// basic settings for the whole page
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+$green: #54be90;
+$white: #ffffff;
+$light_grey: #ebebeb;
+$text_grey: #444444;
+$dark_grey: #232323;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: $text_grey;
+}
+
+// styling for the navigation
+
+.navigation {
+  background-color: $dark_grey;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+  }
+  &__link {
+    list-style: none;
+    text-transform: uppercase;
+
+    &_hover {
+      text-decoration: none;
+      color: $light_grey;
+    }
+    &:hover {
+      background-color: $green;
+      color: $dark_grey;
+    }
+    &__logo {
+      background-color: $white;
+      list-style: none;
+      &_black {
+        color: black;
+        font-weight: 900;
+      }
+      &_green {
+        color: $green;
+        font-size: xx-large;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+// set up of the whole page container and the 1st section = banner styling
+
+.container {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $light_grey;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 100vw;
+  background-image: url(/img/kendal-hnysCJrPpkc-unsplash.jpg);
+  margin-top: 5%;
+  color: $white;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    &_green {
+      color: $green;
+      text-decoration: underline;
+      text-decoration-color: $white;
+      text-underline-offset: 8px;
+    }
+  }
+  &__underline {
+    position: relative;
+    top: -5%;
+  }
+}
+
+// style of the first paragraph section
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  height: 40vh;
+  text-align: center;
+  background-color: $light_grey;
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  height: 10vh;
+  &__bubble {
+    width: 150px;
+    height: 150px;
+    background-color: $light_grey;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+// styling of the dark grey section with the process
+
+.process {
+  width: 100%;
+  height: 60vh;
+  background-color: $dark_grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    color: $light_grey;
+    font-size: 0.7em;
+  }
+  &__part {
+    margin: 1.7%;
+    text-align: center;
+  }
+  &__title {
+    color: $green;
+    font-weight: 800;
+  }
+}
+
+.skills {
+  width: 100%;
+  height: 80vh;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 3px;
+    &_dark {
+      width: 10%;
+      color: $white;
+      background: $dark_grey;
+      padding: 1px 4px;
+      text-align: center;
+    }
+    &_green {
+      background-color: $green;
+      width: 80%;
+      //     &_80 {
+      //       width: 8em;
+      //     }
+      //     &_70 {
+      //       width: 7em;
+      //     }
+      //     &_60 {
+      //       width: 6em;
+      //     }
+      //     &_50 {
+      //       width: 5em;
+      //     }
+      //   }
+      //   &_light {
+      //     color: $dark_grey;
+      //     background: #c8c8c8;
+      //     &_20 {
+      //       width: 2em;
+      //     }
+    }
+  }
+}
