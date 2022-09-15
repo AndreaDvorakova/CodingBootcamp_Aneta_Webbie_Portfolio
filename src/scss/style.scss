@@ -154,12 +154,17 @@ body {
 
 .skills {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   padding: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h3 {
+    color: $green;
+    font-size: 2em;
+    margin-top: -3%;
+  }
 
   &__bar {
     display: flex;
@@ -167,34 +172,55 @@ body {
     width: 70%;
     margin: 3px;
     &_dark {
-      width: 10%;
+      width: 12%;
       color: $white;
       background: $dark_grey;
       padding: 1px 4px;
       text-align: center;
     }
     &_green {
-      background-color: $green;
-      width: 100%;
-      //     &_80 {
-      //       width: 8em;
-      //     }
-      //     &_70 {
-      //       width: 7em;
-      //     }
-      //     &_60 {
-      //       width: 6em;
-      //     }
-      //     &_50 {
-      //       width: 5em;
-      //     }
-      //   }
-      //   &_light {
-      //     color: $dark_grey;
-      //     background: #c8c8c8;
-      //     &_20 {
-      //       width: 2em;
-      //     }
+      &_80 {
+        width: 80%;
+        background-color: $green;
+      }
+      &_70 {
+        width: 70%;
+        background-color: $green;
+      }
+      &_60 {
+        width: 60%;
+        background-color: $green;
+      }
+      &_50 {
+        width: 50%;
+        background-color: $green;
+      }
+    }
+    &_light {
+      &_20 {
+        width: 20%;
+        background-color: #bebebe;
+        padding-right: 1%;
+        text-align: end;
+      }
+      &_30 {
+        width: 30%;
+        background-color: #bebebe;
+        padding-right: 1%;
+        text-align: end;
+      }
+      &_40 {
+        width: 40%;
+        background-color: #bebebe;
+        padding-right: 1%;
+        text-align: end;
+      }
+      &_50 {
+        width: 50%;
+        background-color: #bebebe;
+        padding-right: 1%;
+        text-align: end;
+      }
     }
   }
 }
