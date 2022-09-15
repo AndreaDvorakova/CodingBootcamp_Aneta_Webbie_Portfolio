@@ -347,3 +347,46 @@ body {
     text-align: center;
   }
 }
+//* about me page
+.container__about {
+  width: 100%;
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .container__about__me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3%;
+    img {
+      width: 22%;
+      height: 38%;
+      border-radius: 50%;
+      margin-right: 6%;
+    }
+    .container__about__me__text {
+      font-size: 1rem;
+      text-align: justify;
+      line-height: 1.3rem;
+      width: 31%;
+      span {
+        text-decoration: underline;
+        text-decoration-color: $green;
+        text-decoration-thickness: 0.5em;
+      }
+      h4 {
+        font-size: 1.3em;
+      }
+      button {
+        color: $white;
+        background-color: $green;
+        width: 37%;
+        height: 7%;
+        border-radius: 10%;
+        box-shadow: 2px 2px 2px 2px $text_grey;
+        border: none;
+      }
+    }
+  }
+}
